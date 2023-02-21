@@ -3,6 +3,7 @@
     p {
         @include adaptiv-value('font-size', 20, 18, 1);
         margin-bottom: 20px;
+        text-align: center;
     }
     &__images {
         display: grid;
@@ -18,6 +19,7 @@
     }
     .clients {
         margin: 30px 0 40px;
+        text-align: initial;
         &__body {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -44,6 +46,7 @@
                 @include adaptiv-value('font-size', 16, 14, 1);
                 color: #808b96;
                 line-height: 150%;
+                text-align: initial;
             }
             &__images {
                 width: 100%;
@@ -79,6 +82,7 @@
                 line-height: 160%;
                 color: #232323;
                 margin-bottom: 30px;
+                text-align: left;
             }
             &__details {
                 display: flex;
