@@ -126,7 +126,7 @@ function Home() {
                                 ))}
                         </div>
                         <Link to="/catalog" className="products__button button button__dark">
-                            Смотреть весь каталог
+                            See all products
                         </Link>
                     </div>
                 </div>
@@ -161,7 +161,7 @@ function Home() {
                 <div className="instagram">
                     <div className="instagram__container">
                         <h2>
-                            Следите за нами в{' '}
+                            Follow us on{' '}
                             <a
                                 href="https://instagram.com/lusso.md?igshid=MDE2OWE1N2Q="
                                 target="_blank"
@@ -177,7 +177,7 @@ function Home() {
                     </div>
                 </div>
                 <div className="contact">
-                    <h2>Свяжитесь со мной</h2>
+                    <h2>Contact me</h2>
                     <img src={olga} alt="" />
                     <h4>Rogovaya Olga</h4>
                     <p>Phone: <a href="tel:+37360257777">(+373) 60 257 777</a></p>
