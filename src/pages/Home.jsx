@@ -116,7 +116,7 @@ function Home() {
                             In Lusso, you discover unique, sophisticated home gifts designed for a personal touch. Lusso will inspire your most original housewarming gift ideas. <br />
                         </p>
                         <div className="products__grid products-grid">
-                            {displayProducts &&
+                            {displayProducts && displayProducts.length > 0 &&
                                 displayProducts.map((item, i) => (
                                     <Product
                                         get={getProductModal}
@@ -151,7 +151,7 @@ function Home() {
                     <div className="proud__container">
                         <h2>We pride our products</h2>
                         <div className="proud__body">
-                            {advantages &&
+                            {advantages && advantages.length > 0 &&
                                 advantages.map((advantage) => (
                                     <Proud key={advantage.title} item={advantage} />
                                 ))}
