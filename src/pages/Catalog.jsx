@@ -170,12 +170,12 @@ function Catalog() {
                                 : 'catalog__sidebar catalog-sidebar'
                         }>
                         <div className="catalog-sidebar__filters filters-simple">
-                            <h6>Категории</h6>
+                            <h6>Categories</h6>
                             <button
                                 name="categories"
                                 onClick={clearFilters}
                                 className={activeCategory === '' ? 'current' : ''}>
-                                Все
+                                All
                             </button>
                             {categories &&
                                 categories.map((item) => (
@@ -193,7 +193,7 @@ function Catalog() {
                         </div>
                         {activeCategory && activeCategory.subcategories.length > 0 && (
                             <div className="catalog-sidebar__filters filters-simple">
-                                <h6>Субкатегории</h6>
+                                <h6>Subcategories</h6>
                                 {activeCategory.subcategories.map((item, i) => (
                                     <button
                                         key={item._id}
@@ -212,7 +212,7 @@ function Catalog() {
                         )}
                         {activeCategory && activeCategory.brands.length > 0 && (
                             <div className="catalog-sidebar__filters filters-checkbox">
-                                <h6>Бренд</h6>
+                                <h6>Brand</h6>
 
                                 {activeCategory.brands.map((item, i) => (
                                     <label key={item._id} className="checkbox-container">
@@ -237,7 +237,7 @@ function Catalog() {
                         )}
                         {currentBrands && currentBrands.length > 0 && (
                             <div className="catalog-sidebar__filters filters-checkbox">
-                                <h6>Бренд</h6>
+                                <h6>Brand</h6>
 
                                 {currentBrands.map((item, i) => (
                                     <label key={item._id} className="checkbox-container">
@@ -288,7 +288,7 @@ function Catalog() {
                     </aside>
                     <div className="catalog__container">
                         <button className="button button__dark open-filter" onClick={toggleFilters}>
-                            Фильтры
+                            Filters
                         </button>
 
                         <Products
